@@ -16,6 +16,30 @@ public class JokeCollection {
         this.jokes = jokes;
     }
 
+    public boolean isError() {
+        return error;
+    }
+
+    public void setError(boolean error) {
+        this.error = error;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
+
+    public List<Joke> getJokes() {
+        return jokes;
+    }
+
+    public void setJokes(List<Joke> jokes) {
+        this.jokes = jokes;
+    }
+
     public static class Joke {
         private String category;
         private String type;
