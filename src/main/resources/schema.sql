@@ -1,6 +1,6 @@
 CREATE TABLE jokes(
     id INT AUTO_INCREMENT PRIMARY KEY,
-    category VARCHAR(250),
+    category VARCHAR(250) NOT NULL ,
     joke VARCHAR(1000) NOT NULL,
-    type VARCHAR(255)
+    type VARCHAR(255) NOT NULL
 );
