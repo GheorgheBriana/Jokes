@@ -1,0 +1,6 @@
+CREATE TABLE jokes(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    category VARCHAR(250),
+    joke VARCHAR(1000) NOT NULL,
+    type VARCHAR(255)
+);
