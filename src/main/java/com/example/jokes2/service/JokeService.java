@@ -26,12 +26,16 @@ public class JokeService {
         return jokeCollection.getJokes();
     }
 
-    public void addJoke(int amount) {
+    public int addJoke(int amount) {
         List<JokeCollection.Joke> jokes = getJokes(amount);
+        int addedJokes = 0;
         for(JokeCollection.Joke x : jokes) {
             if(x.getCategory() != null && x.getJoke() != null && x.getType() != null) {
                 jokeRepository.addJoke(x);
+                addedJokes++;
             }
         }
+
+        return addedJokes;
     }
 }
